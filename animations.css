@@ -1,0 +1,32 @@
+.ani_container {
+    margin-top: 4rem;
+    padding: 2rem;
+    min-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.2)
+}
+
+.box {
+    padding: 3rem;
+    height: 20%;
+    width: 50%;
+    background-color: red;
+    margin-bottom: 2rem;
+
+    transition: transform 100ms ease-in forwards 3;
+}
+
+.ani_container:hover .box {
+    animation: box-animation 
+}
+
+@keyframes {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%)
+    }
+}
