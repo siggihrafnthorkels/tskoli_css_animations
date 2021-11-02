@@ -15,14 +15,30 @@
     background-color: red;
     margin-bottom: 2rem;
 
-    transition: transform 100ms ease-in forwards 3;
+    //transition: transform 100ms ease-in forwards 3;
 }
 
-.ani_container:hover .box {
-    animation: box-animation 
+.ani_container:hover .box1 {
+    animation: box-animation 100ms ease-in forwards;
 }
 
-@keyframes {
+@keyframes box-animation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(90%);
+    }
+    100% {
+        transform: translateX(100%)
+    }
+}
+// animate with ease-in
+.ani_container:hover .box1 {
+    animation: box-animation1 100ms ease-in forwards;
+}
+
+@keyframes box-animation1 {
     0% {
         transform: translateX(0);
     }
@@ -30,3 +46,8 @@
         transform: translateX(100%)
     }
 }
+
+// animate with ease-both - box 2
+
+
+// animate with ease-out - box 3
